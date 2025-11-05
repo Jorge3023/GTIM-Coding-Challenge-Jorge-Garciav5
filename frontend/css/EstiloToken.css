@@ -1,0 +1,107 @@
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('Stones_Closeup_Equilibrium_Balance_5119582.png') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.5; /* Ajusta la opacidad para hacer la imagen más transparente */
+    z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 40px;
+}
+
+.inicio {
+    text-decoration: none;
+    color: #333; /* Color del texto */
+    font-size: 16px;
+    background-color: transparent; /* Fondo transparente */
+    padding: 0; /* Sin padding */
+    border: none; /* Sin borde */
+}
+
+
+.body2 {
+    background-color: #fff;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 100px auto; /* Espacio para el header */
+    z-index: 0;
+}
+
+.body2 h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.body2 p {
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    text-align: left;
+    color: #555;
+}
+
+.input-group input[type="text"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    box-sizing: border-box;
+}
+
+.btn {
+    padding: 10px;
+    border: none;
+    background-color: #412bff;
+    color: #fff;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0b1d83;
+}

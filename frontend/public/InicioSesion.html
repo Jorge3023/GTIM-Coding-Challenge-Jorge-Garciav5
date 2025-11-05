@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicia sesión en REMIND</title>
+    <link rel="stylesheet" href="../css/InicioSesion.css">
+    <script src="/js/InicioSesion.js" defer></script> 
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <div class="text-container">
+        <div class="scrolling-text">
+            <h1 class="text-4xl font-bold">Bienvenido</h1>
+        </div>
+    </div>
+    
+    <div class="login-container">
+        <div class="login-box">
+            <div class="login-header">
+                <div class="user-icon"></div>
+            </div>
+            <h2>Inicia sesión</h2>
+            <form id="login-form"> 
+                
+                <input 
+                    type="text" 
+                    name="email" 
+                    id="login-email" 
+                    placeholder="Dirección de correo electrónico" 
+                    required
+                >
+                
+                <input 
+                    type="password" 
+                    name="password" 
+                    id="login-password" 
+                    placeholder="Contraseña" 
+                    required
+                >
+                
+                <a href="./OlvideContraseña.html" class="forgot-password">¿Olvidaste la contraseña?</a>
+                <div class="submit">
+                    <button type="submit">Ingresar Sesion</button>
+                </div>
+            </form>
+            <p class="register">¿Aun no tienes una cuenta? <a href="./CrearCuenta.html">Regístrate</a></p>
+        </div>
+    </div>
+    
+    </body>
+</html>

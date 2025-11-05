@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz de Usuario</title>
+    <link rel="stylesheet" href="frontend/css/Interfaz.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="header">
+                <h1>Remind</h1>
+                <div class="profile">
+                    <img src="/assets/icono.png" alt="Foto de perfil" id="profileImage">
+                    <span id="profileName">Cargando...</span>
+                </div>
+            </div>
+            
+            <div id="welcomeMessageContainer" style="padding: 10px; font-size: 0.9em;">
+                Bienvenido!
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#" id="sendEmailLink">Enviar todas mis actividades a mi correo electrónico</a></li>
+                    <li><a href="#" id="addTaskLink">Agregar actividad</a></li>
+                    <li><a href="#" id="logoutLink">Cerrar sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-content">
+            <h1>Mis actividades</h1>
+            <div id="tasksContainer" class="tasks"></div>
+        </div>
+    </div>
+    
+    <button id="addTaskBtn">Agregar actividad</button>
+
+    <script src="/js/AuthHandler.js" defer></script> 
+    <script src="/js/Interfaz.js" defer></script>
+    <script src="/js/mostrarimagen.js" defer></script>
+</body>
+</html>

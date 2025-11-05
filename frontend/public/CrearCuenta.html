@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Crear una Cuenta</title>
+    <link rel="stylesheet" href="../css/CrearCuenta.css">
+    <script src="../js/CrearCuenta.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <form id="signup-form"> 
+            <h2>Crear Cuenta</h2>
+            
+            <input 
+                type="text" 
+                id="fullName" 
+                name="fullName" 
+                placeholder="Nombre Completo" 
+                required 
+                minlength="5" >
+
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="Correo Electrónico" 
+                required
+            >
+            >
+            
+            <input 
+                type="password" 
+                id="password" 
+                name="password" 
+                placeholder="Contraseña (Mín. 8 caracteres, 1 número, 1 letra)" 
+                required
+            >
+
+            <div class="submit">
+                <button type="submit">Crear Cuenta</button>
+            </div>
+            
+            <p>
+                ¿Ya tienes una cuenta? <a href="./InicioSesion.html">Inicia Sesión aquí</a>
+            </p>
+        </form>
+    </div>
+</body>
+</html>

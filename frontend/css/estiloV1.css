@@ -1,0 +1,157 @@
+body {
+    font-family: "Helvetica", sans-serif; /* Agregar tipo de letra Helvetica */
+    display: flex;
+    justify-content: flex-end; /* Mueve el cuadro hacia la derecha */
+    align-items: center;       /* Centra verticalmente el cuadro */
+    min-height: 100vh;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    background: url('Stones_Closeup_Equilibrium_Balance_5119582.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 800px;
+}
+
+.login-box {
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 0; /* Cambia esto a 0 para bordes rectos */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 300px;
+    font-family: "Helvetica", sans-serif; /* Agregar tipo de letra Helvetica */
+}
+
+.login-header .user-icon {
+    width: 50px;
+    height: 50px;
+    background-image: url('icono.png'); /* Ruta a tu imagen */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: 0 auto 25px auto;
+}
+
+h2 {
+    color: #000000;
+    margin: 0 0 20px 0;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 0; /* Hace los recuadros cuadrados */
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 0; /* Hace el botón cuadrado */
+    background-color: #5078fa;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00327c;
+}
+
+.forgot-password,
+.register a {
+    color: #0044ff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password:hover,
+.register a:hover {
+    text-decoration: underline;
+}
+
+.register {
+    margin-top: 20px;
+    color: #000000;
+}
+
+
+.text-container {
+    position: absolute;
+    top: 50%; /* Centra verticalmente */
+    left: 5%; /* Ajusta la posición hacia el lado izquierdo */
+    transform: translateY(-50%);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 80%; /* Ajusta el ancho según tus necesidades */
+    max-width: 800px; /* Ancho máximo */
+    font-family: 'Hanken Grotesk', sans-serif; /* Cambia la tipografía */
+
+    /* Añade un mínimo de altura para evitar cambios bruscos */
+    min-height: 100px; /* Ajusta según el contenido */
+}
+
+.text-4xl {
+    font-size: 6rem; /* Reducido para mejor ajuste en dispositivos */
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: white; /* Asegúrate de que el color del texto sea blanco */
+
+}
+
+.text-3xl {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: white; /* Asegúrate de que el color del texto sea blanco */
+
+}
+
+.text-2xl {
+    font-size: 2rem;
+    color: white; /* Asegúrate de que el color del texto sea blanco */
+}
+
+@keyframes move-text {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    80% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.scrolling-text {
+    display: inline-block;
+    animation: move-text 4s ease-in-out 0s 1 forwards;
+}
+
+@media (max-width: 600px) {
+    .container {
+      width: 95%;
+      padding: 10px;
+    }
+  }

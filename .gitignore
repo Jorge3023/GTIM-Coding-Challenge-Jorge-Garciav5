@@ -1,0 +1,3 @@
+# Archivos ignorar
+node_modules/
+.env

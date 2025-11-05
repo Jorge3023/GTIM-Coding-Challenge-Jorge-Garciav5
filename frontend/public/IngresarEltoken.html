@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="EstiloToken.css">
+    <title>Ingresa tu Token</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <a href="InicioSesion.html" class="inicio">INICIO</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="body2">
+        <form action="VerificacionToken.php" method="post">
+            <h2>Ingresa tu Token</h2>
+            <p>Ingresa el token que recibiste en tu correo electrónico</p>
+            <div class="input-group">
+                <label for="token">Token:</label>
+                <input type="text" id="token" name="token" required>
+                <input class="btn" type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

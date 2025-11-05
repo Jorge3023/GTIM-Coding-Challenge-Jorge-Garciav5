@@ -1,0 +1,166 @@
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('Stones_Closeup_Equilibrium_Balance_5119582.png') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.5; /* Ajusta la opacidad para hacer la imagen más transparente */
+    z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 45px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 0px;
+    box-sizing: border-box;
+}
+
+.forgot-password-box {
+    text-align: center;
+}
+
+.forgot-password-box h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.forgot-password-box p {
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.forgot-password-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.forgot-password-box label {
+    margin-bottom: 5px;
+    text-align: left;
+    color: #555;
+}
+
+.forgot-password-box input[type="email"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    box-sizing: border-box;
+}
+
+.forgot-password-box button {
+    padding: 10px;
+    border: none;
+    background-color: #412bff;
+    color: #fff;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px ;
+}
+
+.forgot-password-box button:hover {
+    background-color: #0b1d83;
+    margin-top: 20px ;
+}
+
+.back-to-login {
+    color: #337ab7;
+    text-decoration: none; /* Añadir esta línea para quitar el subrayado */
+    line-height: 4;
+}
+
+.back-to-login:hover {
+    color: #061986;
+    text-decoration: none; /* Asegúrate de mantener el subrayado quitado en el hover */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 30px;
+    }
+    
+    .forgot-password-box h2 {
+        margin-bottom: 20px;
+        font-size: 1.5em;
+    }
+    
+    .forgot-password-box p {
+        margin-bottom: 20px;
+        font-size: 1em;
+    }
+    
+    .forgot-password-box input[type="email"] {
+        padding: 8px;
+        font-size: 1em;
+    }
+    
+    .forgot-password-box button {
+        padding: 8px;
+        font-size: 1em;
+    }
+}
+
+/* Estilos para pantallas de hasta 480px */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    p {
+        font-size: 1em;
+    }
+}
+
+/* Estilos para pantallas de hasta 600px */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 1.75em;
+    }
+    
+    p {
+        font-size: 1.1em;
+    }
+}
+
+/* Estilos para pantallas de hasta 1024px */
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    p {
+        font-size: 1.2em;
+    }
+}

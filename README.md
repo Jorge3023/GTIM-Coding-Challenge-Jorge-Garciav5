@@ -1,4 +1,4 @@
-REMIND: Sistema de Autenticación y Gestión de Actividades (V1 - Inicio De Sesion)
+REMIND: Sistema de Autenticación y Gestión de Actividades (V5 - Inicio De Sesion)
 
 
 💻 Tecnologías Utilizadas
@@ -26,4 +26,5 @@ US02: Inicio de Sesión de Usuario (User Login)
 **Bloqueo:** Bloqueo de la cuenta por 2 horas tras 3 intentos fallidos consecutivos.
 **Mensaje de Bienvenida:** Muestra "Bienvenido <Nombre Completo>! Para cerrar sesión haga clic aquí".
 **Cierre de Sesión:** Manejo básico de la sesión y enlace funcional para cerrar sesión.
+
 

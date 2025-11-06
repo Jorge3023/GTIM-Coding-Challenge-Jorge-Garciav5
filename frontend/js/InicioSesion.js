@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     // En el mundo real, se guardaría el 'fullName' o un token en el almacenamiento local.
                     
                     localStorage.setItem('userFullName', data.fullName);
-                    window.location.href = './Index.html'; // Redirige a la página principal
+                    window.location.href = '../Index.html'; // Redirige a la página principal
                     
                 } else {
                     // Manejo de errores de credenciales o bloqueo
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
 if (data.success) {    
     localStorage.setItem('userFullName', data.fullName); 
     
-    window.location.href = './Index.html'; // Redirige a la página principal
+    window.location.href = '../Index.html'; // Redirige a la página principal
     
 } else {
     // Manejo de errores de credenciales o bloqueo
